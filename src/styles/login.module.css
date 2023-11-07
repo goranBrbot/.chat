@@ -1,0 +1,77 @@
+small {
+  color: #707070;
+  text-align: center;
+  font-weight: 700;
+}
+
+.avatarsGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+
+.avatars > input {
+  display: none;
+}
+
+.avatars > input + img {
+  cursor: pointer;
+  height: 5em;
+  border: 1px solid transparent;
+}
+
+.avatars > input:checked + img {
+  border-radius: 100%;
+  border: 3px solid transparent;
+  background-image: -o-linear-gradient(30deg, #ff907d 0%, #71b8ff 100%);
+  background-image: linear-gradient(60deg, #ff907d 0%, #71b8ff 100%);
+  background-origin: border-box;
+  -webkit-box-shadow: inset 0 100vw white;
+  box-shadow: inset 0 100vw white;
+  -webkit-animation: loader 0.1s linear;
+  animation: loader 0.1s linear;
+}
+
+@-webkit-keyframes loader {
+  0% {
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes loader {
+  0% {
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.loginBtn {
+  margin: 20px;
+  background-color: #71b8ff;
+  border-color: #71b8ff;
+}
+
+.loginBtn:hover {
+  background-color: #e2d1c3;
+  border-color: #e2d1c3;
+}
+
+.loginBtn:active {
+  background-color: #71b8ff;
+  border-color: #71b8ff;
+}
+
+.loginBtn:focus:default {
+  background-color: #71b8ff;
+  border-color: #71b8ff;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+}
