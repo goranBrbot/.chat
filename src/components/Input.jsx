@@ -34,11 +34,11 @@ export default function Input({ onSendMessage }) {
       <div className={styles.input}>
         <form onSubmit={onSubmit}>
           <input onChange={onChange} ref={inputFocusRef} value={inputValue} type="text" placeholder="Message .." autoFocus />
-          <img src="/src/assets/svg/emoji.svg" alt="" className={styles.emoji} onClick={() => setEmoji(!emoji)} />
+          <img src="/svg/emoji.svg" alt="" className={styles.emoji} onClick={() => setEmoji(!emoji)} />
           <button>Send</button>
         </form>
         <audio ref={audioRef} hidden>
-          <source src="src/assets/audio/notification.mp3" type="audio/mpeg" />
+          <source src="/audio/notification.mp3" type="audio/mpeg" />
         </audio>
       </div>
     </>

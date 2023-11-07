@@ -25,10 +25,10 @@ function Message({ member, data, id, timestamp }, user) {
 
   const currentAvatar = () => {
     const avatars = {
-      avatar1: `url('src/assets/svg/male1.svg')`,
-      avatar2: `url('src/assets/svg/girl1.svg')`,
-      avatar3: `url('src/assets/svg/male2.svg')`,
-      avatar4: `url('src/assets/svg/girl2.svg')`,
+      avatar1: `url('/svg/male1.svg')`,
+      avatar2: `url('/svg/girl1.svg')`,
+      avatar3: `url('/svg/male2.svg')`,
+      avatar4: `url('/svg/girl2.svg')`,
     };
 
     for (const key in avatars) {

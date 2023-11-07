@@ -59,19 +59,19 @@ export default function Login({ show, onHide, onSendUser }) {
                 <Form.Group className={styles.avatarsGroup}>
                   <Form.Label className={styles.avatars}>
                     <input type="radio" id="avatar1" name="avatar" checked={selectedAvatar === "avatar1"} onChange={onAvatarChange} />
-                    <img src="src/assets/svg/male1.svg" alt="" />
+                    <img src="/svg/male1.svg" alt="" />
                   </Form.Label>
                   <Form.Label className={styles.avatars}>
                     <input type="radio" id="avatar2" name="avatar" checked={selectedAvatar === "avatar2"} onChange={onAvatarChange} />
-                    <img src="src/assets/svg/girl1.svg" alt="" />
+                    <img src="/svg/girl1.svg" alt="" />
                   </Form.Label>
                   <Form.Label className={styles.avatars}>
                     <input type="radio" id="avatar3" name="avatar" checked={selectedAvatar === "avatar3"} onChange={onAvatarChange} />
-                    <img src="src/assets/svg/male2.svg" alt="" />
+                    <img src="/svg/male2.svg" alt="" />
                   </Form.Label>
                   <Form.Label className={styles.avatars}>
                     <input type="radio" id="avatar4" name="avatar" checked={selectedAvatar === "avatar4"} onChange={onAvatarChange} />
-                    <img src="src/assets/svg/girl2.svg" alt="" />
+                    <img src="/svg/girl2.svg" alt="" />
                   </Form.Label>
                 </Form.Group>
               </Row>
