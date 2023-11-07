@@ -117,7 +117,7 @@ export default function App() {
         </div>
       </div>
       <div className={styles.footer}>
-        Made with <img src="./src/assets/svg/srce.svg" alt="" width="15px" /> by Goran Brbot
+        Made with <img src="/svg/srce.svg" alt="" width="15px" /> by Goran Brbot
       </div>
     </>
   );
