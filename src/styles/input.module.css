@@ -1,0 +1,68 @@
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: white;
+  border-radius: 100px;
+  margin-bottom: 3px;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #71b8ff;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  margin: 14px;
+  cursor: pointer;
+}
+
+.emoji {
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.emoji:hover {
+  -webkit-animation: loader 0.5s ease-out;
+  animation: loader 0.5s ease-out;
+}
+
+@-webkit-keyframes loader {
+  0% {
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes loader {
+  0% {
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.emojiPicker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 10px;
+}
