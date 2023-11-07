@@ -16,8 +16,12 @@ Navedena chat aplikacija bi trebala ..
 
 ## Vizualni izgled
 
-![Vizualni izgled img.1](/src/assets/img/app.png)
+![Vizualni izgled img.1](/img/app.png)
 
-![Vizualni izgled img.2](/src/assets/img/app2.png)
+![Vizualni izgled img.2](/img/app2.png)
 
-![Vizualni izgled img.3](/src/assets/img/app3.png)
+![Vizualni izgled img.3](/img/app3.png)
+
+## Live
+
+https://brchat.netlify.app
