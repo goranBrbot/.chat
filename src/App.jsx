@@ -3,16 +3,17 @@ import styles from "./styles/app.module.css";
 import Login from "./components/Login";
 import Input from "./components/Input";
 import Messages from "./components/Messages";
+import Members from "./components/Members";
 import { useState, useRef } from "react";
 
 let drone = null;
 const droneChannelId = import.meta.env.VITE_DRONE_CHANNEL_ID;
-console.log(droneChannelId);
 
 export default function App() {
   // praćenje STANJA usera, članova, poruka i logina
   const [modalShow, setModalShow] = useState(true);
   const [messages, setMessages] = useState([]);
+  const [members, setMembers] = useState([]);
   const [user, setUser] = useState({
     id: null,
     username: "",
@@ -29,6 +30,9 @@ export default function App() {
   // REFERENCE na trenutne vrijednosti stanja kako bi se osiguralo da se uvijek koristi najnovija verzija podataka bez rendera
   const messagesRef = useRef();
   messagesRef.current = messages;
+
+  const membersRef = useRef();
+  membersRef.current = members;
 
   const userRef = useRef();
   userRef.current = user;
@@ -63,6 +67,25 @@ export default function App() {
       setMessages([...messagesRef.current, message]);
       console.log(message); // test
     });
+
+    // ažurira stanje članova
+    room.on("members", (members) => {
+      setMembers(members);
+      console.log(members); // test
+    });
+
+    // dodaje novog člana u stanje članova
+    room.on("member_join", (member) => {
+      setMembers([...membersRef.current, member]);
+    });
+
+    // uklanja člana iz stanja članova
+    room.on("member_leave", ({ id }) => {
+      const index = membersRef.current.findIndex((m) => m.id === id);
+      const newMembers = [...membersRef.current];
+      newMembers.splice(index, 1);
+      setMembers(newMembers);
+    });
   }
 
   // slanje poruke u "observable-room"
@@ -88,6 +111,7 @@ export default function App() {
       <div className={styles.app}>
         <div className={styles.appContent}>
           <Login show={modalShow} onHide={() => setModalShow(false)} onSendUser={handleUser} />
+          <Members members={members} user={user} />
           <Messages messages={messages} user={user} />
           <Input onSendMessage={handleSendMessage} />
         </div>

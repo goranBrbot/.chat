@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap');
+
+.members {
+  display: flex;
+  justify-content: space-between;
+  background: -o-linear-gradient(15deg, #fdfcfb 0%, #e2d1c3 100%);
+  background: linear-gradient(15deg, #fdfcfb 0%, #e2d1c3 100%);
+  padding: 0.7rem;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 7px -7px 50px #8e837b;
+  border-radius: 40px;
+}
+
+.membersList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.membersList > .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.currentMember > .messageContent .text {
+  background-color: white;
+  border-top-right-radius: 0;
+  color: #515151;
+}
+
+.username {
+  color: #515151;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+h1 {
+  font: 900 3rem Fira Sans, sans-serif;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  color: #71b8ff;
+  background-position: top;
+  background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+  background-size: contain;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
