@@ -53,8 +53,8 @@ body {
 
 @media screen and (max-width: 1200px) {
   .app {
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
   }
   .footer {
     display: none;

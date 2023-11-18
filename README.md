@@ -14,14 +14,14 @@ Navedena chat aplikacija bi trebala ..
 - povezati se sa Scaledrone servisom te uspješno simulirati razgovor svih aktivnih korisnika
 - biti dostupna preko javnog GitHub računa
 
-## Vizualni izgled
-
-![Vizualni izgled img.1](/img/app.png)
-
-![Vizualni izgled img.2](/img/app2.png)
-
-![Vizualni izgled img.3](/img/app3.png)
-
 ## Live
 
-https://brchat.netlify.app
+<https://brchat.netlify.app>
+
+## Vizualni izgled
+
+![Vizualni izgled img.1](/public/img/app.png)
+
+![Vizualni izgled img.2](/public/img/app2.png)
+
+![Vizualni izgled img.3](/public/img/app3.png)
